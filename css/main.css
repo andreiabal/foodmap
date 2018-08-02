@@ -1,1 +1,85 @@
 /*Add your CSS*/
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 7vw;
+}
+
+.box-1,
+.box-2 {
+  justify-content: center;
+  position: absolute;
+  /*top:0;
+  left: 0;*/
+  /*height: 100vh;*/
+  /*min-height: 130vh;*/
+}
+
+.box-1 {
+  overflow: hidden;
+  min-height: 95vh;
+}
+
+.box-2 {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  min-height: 130vh;
+}
+
+hr.style {
+  height: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 70vw;
+}
+
+hr.style:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+#map {
+  height: 38vh;
+  width: 70vw;
+  margin: auto;
+}
+
+#box-images {
+  /*height: 40vh;*/
+  height: 100%;
+  width: 80vw;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#inputGroupSelect04 , .btn {
+  margin-top: 20px;
+  text-align: center
+}
+
+img {
+  width: 135px; 
+  height: 100px;
+}
+
+/*div.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  > .col, > [class*="col-"]
+
+{
+  padding-right: 0;
+  padding-left: 0;
+}
+}

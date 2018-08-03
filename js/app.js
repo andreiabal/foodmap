@@ -3,9 +3,15 @@ $(document).ready(function() {
 
   //Imagens
 $.each(restaurantes, function (index, restaurante) {
-  $("<img>").attr("src", restaurante.image).addClass(restaurante.name).appendTo("#box-images");
+  //$("<img>").attr("src", restaurante.image).addClass(restaurante.name).appendTo("#box-images");
+  $("<img>").attr("src", restaurante.image).attr('id', restaurante.name).attr('onClick', 'onClick(this);').addClass(restaurante.type).appendTo("#box-images");
+  $(".form-control").focusout(function(){
+    var busca = $(this).val();
+    //console.log(busca);
+  });
 })
 });
+
 
 /*var map;
 
@@ -16,12 +22,13 @@ function initMap() {
  });
 }*/
 
+
 //MAPA//
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-  zoom: 15,
-  center: new google.maps.LatLng(-23.5578108, -46.6625469),
+  zoom: 14,
+  center: new google.maps.LatLng(-23.5576364, -46.6644888),
   mapTypeId: 'roadmap'
 });
 

@@ -63,14 +63,30 @@ hr.style:before {
   margin-top: 40px;
 }
 
-#inputGroupSelect04 , .btn {
+/*.inputGroupSelect04 , .btn {
   margin-top: 20px;
   text-align: center
-}
+}*/
+
+/*.btn {
+  margin-top: 20px;
+  text-align: center
+}*/
 
 img {
-  width: 135px; 
+  width: 140px; 
   height: 100px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+img:hover {
+  background-color: white;
+}
+
+.input-group {
+  width: 81vw;
+  padding-left: 80px;
 }
 
 /*div.row.no-gutters {
@@ -82,4 +98,5 @@ img {
   padding-right: 0;
   padding-left: 0;
 }
-}
+}*/
+

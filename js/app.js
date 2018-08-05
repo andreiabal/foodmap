@@ -24,17 +24,45 @@ function initMap() {
 
 function hideSplashScreen() {
   $('#main-content').delay('2000').fadeIn('slow')
+  $('#main-content').fadeIn('slow')
 }
 
 function showRestaurants(restaurantsArray) {
+  $('#box-images').html('');
+
   $.each(restaurantsArray, function (index, restaurant) {
     $('<img>')
       .attr('src', restaurant.image)
       .attr('id', restaurant.name)
-      .attr('onClick', 'openModal')
+      .on('click', openModal)
       .addClass(restaurant.type)
       .appendTo('#box-images');
   })
+}
+
+function openModal(event) {
+  const restaurantName = $(event.target).attr('id');
+
+  const restaurantData = 
+    $(restaurantes).filter(function (index, restaurant) {
+      if (restaurantName === restaurant.name) {
+        return true;
+      } else {
+        return false; 
+      }
+    })[0];
+
+  $('#restaurant-modal-name').text(restaurantData.name);
+  $('#restaurant-modal-type').text(restaurantData.type);
+  $('#restaurant-modal-description').text(restaurantData.description);
+  $('#restaurant-modal-image').attr('src', restaurantData.image);
+  
+  $('#restaurant-modal').modal('show');
+
+  $('.form-control').val('');
+
+  showRestaurants(restaurantes);
+
 }
 
 function initialiseSearchInput() {

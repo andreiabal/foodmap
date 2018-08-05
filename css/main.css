@@ -67,8 +67,8 @@ hr.style:before {
 }
 
 img {
-  width: 140px; 
-  height: 100px;
+  width: 23vw;
+  height: 20vh;
   cursor: pointer;
   padding: 5px;
 }

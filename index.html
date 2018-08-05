@@ -21,12 +21,40 @@
       <div id="map" class="border border-white"></div>
       <h1 class="text-white pt-4 font-weight-normal">Tá com fome de que?</h1>
       <h2 class="text-white pt-1 font-weight-normal">Selecione pelo tipo de comida</h2>
+
       <div class="input-group mb-3 mt-2 mx-auto">
         <input type="text" class="form-control" placeholder="Árabe, Fast food, Italiana, Japonesa, Vegana" aria-label="Recipient's username" aria-describedby="basic-addon2">
       </div>
       
       <div class="col-12 text-center" id="box-images"></div>
     </section>
+
+    <section>
+      <div class="modal" id="restaurant-modal" role="dialog" aria-labelledby="exampleModalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="restaurant-modal-name"></h5>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <a><img id="restaurant-modal-image" src="" class="img-modal"/></a>
+
+              <div class="col-sm-12 col-md-12 p-0">
+                <p id="restaurant-modal-description" class="descr"></p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-warning font-weight-bold" data-dismiss="modal">Peça agora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>

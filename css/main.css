@@ -1,20 +1,24 @@
-/*Add your CSS*/
 body {
   margin: 0;
 }
 
+.box-1 h1 {
+  font-size: 10vw;
+}
+
 h1 {
-  font-size: 7vw;
+  font-size: 5vw;
+}
+
+h2 {
+  font-size: 3vw;
 }
 
 .box-1,
 .box-2 {
   justify-content: center;
   position: absolute;
-  /*top:0;
-  left: 0;*/
-  /*height: 100vh;*/
-  /*min-height: 130vh;*/
+  background-color: #FFA500;
 }
 
 .box-1 {
@@ -50,28 +54,17 @@ hr.style:before {
 }
 
 #map {
-  height: 38vh;
+  height: 45vh;
   width: 70vw;
   margin: auto;
 }
 
 #box-images {
-  /*height: 40vh;*/
   height: 100%;
   width: 80vw;
   margin: auto;
   margin-top: 40px;
 }
-
-/*.inputGroupSelect04 , .btn {
-  margin-top: 20px;
-  text-align: center
-}*/
-
-/*.btn {
-  margin-top: 20px;
-  text-align: center
-}*/
 
 img {
   width: 140px; 
@@ -85,18 +78,5 @@ img:hover {
 }
 
 .input-group {
-  width: 81vw;
-  padding-left: 80px;
+  width: 60vw;
 }
-
-/*div.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-  > .col, > [class*="col-"]
-
-{
-  padding-right: 0;
-  padding-left: 0;
-}
-}*/
-

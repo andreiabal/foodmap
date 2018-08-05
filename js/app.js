@@ -68,15 +68,7 @@ function openModal(event) {
 function initialiseSearchInput() {
   $('.form-control').keyup(function() {
     const search = $(this).val().toLowerCase();
-
-    // Mesma coisa que:
-    //
-    // const filteredRestaurants = []
-    // for (let i = 0; i < restaurantes.length) {
-    //   if (restaurantes[i].name === search) {
-    //     filteredRestaurants.push(restaurantes[i]);
-    //   }
-    // }
+    
     const filteredRestaurants = 
       $(restaurantes).filter(function (index, restaurant) { 
         // Quando a busca for vazia, mostro todos os restaurantes
